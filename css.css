@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: aliceblue;
+  font-family: tex;
+  user-select:none;
+  outline:none;
+}
+
+@font-face {
+  font-family: tex;
+  src: url(tex.woff);
+}
+
+body {
+  background: #181717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  padding: 10px;
+  background: #212121;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+
+}
+
+.error{
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  margin-bottom: 4px;
+  background: #da3232;
+  border-radius: 2px;
+}
+
+.error *{
+
+  color:#e6ff00;
+  font-size: 22px;
+  margin:0 2px;
+
+}
+
+.or {
+  display: flex;
+  justify-content: space-between;
+}
+
+.or p {
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left:50px;
+}
+
+.fandl {
+  display: flex;
+}
+
+.fandl > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.fandl div input[type="text"] {
+
+      width: 100%;
+
+}
+.pasp i{
+  color:#000;
+  cursor:pointer;
+}
+.pasp{
+  display:flex;
+  align-items: center;
+  padding:2px;
+  margin:4px 0;
+  border:#ccc solid 2px;
+  border-radius:2px;
+  background:#fff;
+}
+.pasp input{
+  color:#212121;
+  background: none;
+  flex:1;
+  border:none;
+}
+.dis{
+  overflow:hidden;
+  position: relative;
+ padding: 7px;
+    background: #000;
+    border-radius: 10px;
+}
+.dis::before{
+  content:'';
+  width: 40px;
+  height:200%;
+  position:absolute;
+  background:linear-gradient(to bottom,#1c0fd4,#17ced4);
+  top:-50%;
+  left:50%;
+  margin: 0 -20px 0;
+  box-shadow:
+   20px 0 10px #2bff00,
+   -20px 0 10px #ff0000;
+   animation: ro 1s linear infinite;
+}
+@keyframes ro {
+  0%{
+    transform:rotate(0);
+  }
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+.first input,
+.last input,
+.email input
+{
+  padding:2px;
+  margin:4px 0;
+  border:#ccc solid 2px;
+  border-radius:2px;
+  color:#212121;
+}
+
+label {
+  width: max-content;
+}
+.first{
+  margin-right:4px;
+}
+.last{
+  margin-left:4px;
+}
+#done {
+  background: #151516;
+  border: none;
+  font-size:20px;
+  width: 50%;
+  align-self: center;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+input[type="file"] {
+  display:none;
+}
+.slc{
+    background: #d4a50a;
+    padding: 4px;
+    cursor: pointer;
+    width: max-content;
+    margin: 12px 0 2px;
+    border-radius:4px;
+    color:#00f;
+  }
+  .slc i{
+    
+    color:#49ca0d;
+
+}
+
+.ero{
+  align-self:flex-end;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.ero *{
+  
+  color: #f00;
+  
+}
+.tim{
+  animation:tim 0.2s linear forwards;
+  color:#fff;
+}
+@keyframes tim {
+
+  0%{
+    transform:scale(1.1)
+  }
+  100%{
+    transform:scale(1)
+  }
+  
+}
+
+
+
+.an-remo{
+  animation:rem 1s linear forwards;
+}
+@keyframes rem {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.fa,
+.fa-solid {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src:url(fa-solid-900.ttf) format("truetype");
+}
+.fa-solid,
+.fas {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.fa-eye:before {
+  content: "\f06e";
+}
+.fa-exclamation-triangle:before,
+.fa-triangle-exclamation:before,
+.fa-warning:before {
+  content: "\f071";
+}
+.fa-upload:before {
+  content: "\f093";
+}
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+.fa-search:before {
+  content: "\f002";
+}
+.fa-eye-slash:before {
+  content: "\f070";
+}
