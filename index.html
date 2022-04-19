@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display:none">
+        <i class="fa-solid fa-paper-plane"></i>
+        <i class="fa-solid fa-search"></i>
+    </div>
+
+<div class="dis">
+    <form action="#">
+
+
+        <div class="error" style="display:none">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <p>this error</p>
+        </div>
+
+
+        <div class="fandl">
+
+
+            <div class="first">
+                <label for="first">first name:</label>
+                <input type="text" id="first" placeholder="first name" name="first name">
+                <div class="ero" style="opacity:0;">
+                    <p></p>
+                    <i class=" fa solid fa-circle-xmark"></i>
+                </div>
+            </div>
+
+            <div class="last">
+                <label for="last">last name:</label>
+                <input type="text" id="last" placeholder="last name" name="last name">
+                <div class="ero" style="opacity:0;">
+                    <p></p>
+                    <i class=" fa solid fa-circle-xmark"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="email">
+            <label for="email">email:</label>
+            <input type="text" id="email" placeholder="email" name="email">
+
+            <div class="ero" style="opacity:0;">
+                <p></p>
+                <i class=" fa solid fa-circle-xmark"></i>
+            </div>
+        </div>
+
+        <div class="password">
+            <label for="password">password:</label>
+            <div class="pasp">
+                <input type="password" id="password" placeholder="password" name="password">
+                <i class="fa-solid fa-eye"></i>
+            </div>
+
+            <div class="ero" style="opacity:0;">
+                <p></p>
+                <i class=" fa solid fa-circle-xmark"></i>
+            </div>
+
+
+        </div>
+
+        <input type="file" id="file" name="file">
+        <label for="file" title="upload image" class="slc">
+
+            <i class="fa-solid fa-upload"></i>
+            upload image
+
+
+        </label>
+
+        <button id="done">sign up</button>
+
+        <div class="or">
+            <div>already login</div>
+            <p>sign in?</p>
+            <!-- <i class=""></i>
+            <i class="fa solid fa-circle-xmark"></i> -->
+        </div>
+
+    </form>
+</div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
